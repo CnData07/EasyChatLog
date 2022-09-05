@@ -6,7 +6,7 @@ const _VER = '1.0.1';
 const dir_path = './plugins/EasyChatLog/';
 
 mc.listen("onChat",(pl,msg)=>{
-    var msglog = `[${system.getTimeStr()}]<${pl.realName}> ${msg}`;
+    var msglog = `${system.getTimeStr()}\t${pl.realName}\t${msg}`;
     var tm = system.getTimeObj();
 
     path =`${dir_path}/${tm.Y}.${tm.M}/${tm.Y}.${tm.M}.${tm.D}.txt`;
