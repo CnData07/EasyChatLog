@@ -2,7 +2,6 @@
 /// <reference path="G:/Minecraft/LXL/JS_Edit/HelperLib-master/src/index.d.ts"/> 
 
 const _VER = '1.0.2';
-//简单记录一下玩家聊天内容
 const dir_path = './plugins/EasyChatLog/';
 
 mc.listen("onChat",(pl,msg)=>{
@@ -14,4 +13,4 @@ mc.listen("onChat",(pl,msg)=>{
     File.writeLine(path, msglog);
 })
 
-colorLog("yellow", "加载完成!");
+colorLog("yellow", "[简单的聊天记录] 加载完成!");
